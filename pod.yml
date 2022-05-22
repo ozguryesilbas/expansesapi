@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: expansesapi
+  labels:
+    name: expansesapi
+spec:
+  containers:
+    - name: expansesapi
+      image: ozguryesilbas/expanses:latest
+      ports:
+        - containerPort: 8080
